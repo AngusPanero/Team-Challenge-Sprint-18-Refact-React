@@ -21,7 +21,7 @@ const SumaModulo = () => {
                 <input type="number" placeholder='Introduce un Nùmero' value={sumaNew} min={0} onChange={(e) => setSumaNew(e.target.value)}/>
                 <button type='submit'>Sumar</button>
             </form>
-            <p>Resultado: {resultado}</p>
+            <p>Resultado: {resultado.toFixed(2)}</p>
         </div>
     )
 }

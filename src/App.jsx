@@ -47,7 +47,7 @@ function App() {
     <div className="empleados">
       <div className='botonEmpleados'>
         <button onClick={() => {setPagina(pagina - 1)}} disabled={pagina === 0}>Anterior</button>
-        <button onClick={() => {setPagina(pagina + 1)}}disabled={indiceFinal >= empleados.length}>Siguiente</button>
+        <button onClick={() => {setPagina(pagina + 1)}} disabled={indiceFinal >= empleados.length}>Siguiente</button>
       </div> 
 
         {filtro.map((empleado) => 

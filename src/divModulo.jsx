@@ -25,7 +25,7 @@ const DividirModulo = () => {
                 <input type="number" placeholder='Introduce un Nùmero' value={dividirNew} min={0} onChange={(e) => setDividirNew(e.target.value)}/>
                 <button type='submit'>Dividir</button>
             </form>
-            <p>Resultado: {resultado}</p>
+            <p>Resultado: {resultado.toFixed(2)}</p>
         </div>
     )
 }

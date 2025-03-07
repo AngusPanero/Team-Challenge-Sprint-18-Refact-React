@@ -21,7 +21,7 @@ const RestaModulo = () => {
                 <input type="number" placeholder='Introduce un Nùmero' value={restaNew} min={0} onChange={(e) => setRestaNew(e.target.value)}/>
                 <button type='submit'>Restar</button>
             </form>
-            <p>Resultado: {resultado}</p>
+            <p>Resultado: {resultado.toFixed(2)}</p>
         </div>
     )
 }

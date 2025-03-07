@@ -21,7 +21,7 @@ const MultiplicarModulo = () => {
                 <input type="number" placeholder='Introduce un Nùmero' value={multiplicarNew} min={0} onChange={(e) => setMultiplicarNew(e.target.value)}/>
                 <button type='submit'>Multiplicar</button>
             </form>
-            <p>Resultado: {resultado}</p>
+            <p>Resultado: {resultado.toFixed(2)}</p>
         </div>
     )
 }

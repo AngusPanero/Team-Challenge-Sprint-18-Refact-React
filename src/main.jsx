@@ -12,7 +12,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <div className='modules'>
 
       <div className='calculatorModules'>
-        <h1>Cocretas Inc. Calculator</h1>
+        <h1>Calculator</h1>
         <SumaModulo />
         <RestaModulo />
         <DividirModulo />
@@ -20,7 +20,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       </div> 
 
       <div className='empleadosModule'>
-        <h1>Cocretas Inc. Empleados</h1>
+        <h1>Empleados</h1>
         <App />
       </div>
     </div>

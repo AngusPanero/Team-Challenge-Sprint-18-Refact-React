@@ -1,11 +1,11 @@
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
-  font-weight: 400;
+  font-weight: 300;
 
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  color: rgba(0, 0, 0, 0.87); 
+  background-color: #f0f4f8;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -13,39 +13,106 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+@keyframes backgroundMotion {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background: linear-gradient(45deg, #6dd5ed, #27adce);
+  background-size: 400% 400%;
+  animation: backgroundMotion 5s ease infinite;
+}
+
+.footer{
+  display: flex;
+  gap: .7rem;
+  margin-top: 10rem;
+}
+
+.bienvenida{
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+  transition: 1.5s;
+}
+
+.bienvenida:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+  transition: 1.5s;
+}
+.bienvenida.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+  transition: 1.5s;
+}
+
+.cocretasLogo{
+  height: auto;
+  width: 13rem;
+  transition: 1.5s;
+  animation: logo-spin infinite 5s linear;
+}
+
+.cocretasLogo:hover {
+  filter: drop-shadow(0 0 2em #c7c9f9aa);
+  transition: 1.5s;
+}
+.cocretasLogo.react:hover {
+  filter: drop-shadow(0 0 2em #8be0f7aa);
+  transition: 1.5s;
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 .modules{
   display: flex;
-  gap: 5rem;
+  justify-content: baseline;
+  gap: 8rem;
   width: 100rem;
 }
 
 .empleadosModule{
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: baseline;
 }
 
 a {
   font-weight: 500;
-  color: #646cff;
+  color: #2193b0; 
   text-decoration: inherit;
 }
 
 a:hover {
-  color: #535bf2;
-}
-
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  color: #1e82a5;
 }
 
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
+  transition: 1.5s;
+  color: #333; 
 }
 
 button {
@@ -55,12 +122,13 @@ button {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
+  background-color: #ffffff;
+  color: #333; 
   cursor: pointer;
   transition: border-color 0.25s;
 }
 button:hover {
-  border-color: #646cff;
+  border-color: #2193b0;
 }
 button:focus,
 button:focus-visible {
@@ -69,13 +137,13 @@ button:focus-visible {
 
 @media (prefers-color-scheme: light) {
   :root {
-    color: #213547;
-    background-color: #ffffff;
+    color: #333; 
+    background-color: #f0f4f8;
   }
   a:hover {
-    color: #747bff;
+    color: #2193b0;
   }
   button {
-    background-color: #f9f9f9;
+    background-color: #ffffff;
   }
 }
