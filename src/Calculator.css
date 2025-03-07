@@ -1,0 +1,22 @@
+.modulo{
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+button{
+    width: 10rem;
+    height: 2.5rem;
+}
+
+form{
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+input{
+    height: 2rem;
+}

@@ -5,12 +5,28 @@
   text-align: center;
 }
 
-.envoltura {
-  display: inline;
+button{
+  height: 20rem;
 }
 
-.envoltura > div {
-  display: inline-block;
+.botonEmpleados{
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.empleados{
+  display: flex;
+  flex-direction: column;
+  max-width: 35rem;
+  max-width: auto;
+}
+
+.dataEmpleado{
+  display: flex;
+  flex-direction: row;
+  height: 2rem;
+  gap: 1rem;
 }
 
 .logo {
